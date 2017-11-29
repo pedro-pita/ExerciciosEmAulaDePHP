@@ -19,8 +19,8 @@
 		   }
 		}
 ?>
-		<form name="form1" method="post" action="<? echo $_SERVER['PHP_SELF'];?>">
-			<input type="text" name="textoP" value="">
-			<input type="submit" name="Submit" value="Logout">
+	<form name="form1" method="post" action="<? echo $_SERVER['PHP_SELF'];?>">
+		<input type="text" name="textoP" value="">
+		<input type="submit" name="Submit" value="Logout">
 	</body>
 </html>
