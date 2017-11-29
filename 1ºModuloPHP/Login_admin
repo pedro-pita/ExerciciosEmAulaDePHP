@@ -1,0 +1,14 @@
+<?
+//pagina de redirecionamento
+function redireciona(){
+    $host = $_SERVER['HTTP_HOST'];
+    //rtrim limpa todo o conteudo do diretorio do parametro 
+    $uri = rtrim(dirname($_SERVER['PHP_SELF'])."/\\");
+    $extra = "admin.php";
+    header("Location: http://$host$uri/$extra");
+}
+//testar o clique no btn submit
+if(isset($_POST["Submit"])){
+    redireciona();
+}
+?>
