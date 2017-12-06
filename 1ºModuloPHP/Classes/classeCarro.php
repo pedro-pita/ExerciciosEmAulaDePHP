@@ -20,6 +20,8 @@ class Carro{
     public function setAtributos($marca_p,$modelo_p,$cor_p){
         //Atributo que 'seta' a marca com o parametro recebido $marca_p
         $this->_marca = $marca_p;
+        //Atributo que 'seta' o modelo com o parametro recebido $modelo_p
+        $this->_modelo=$modelo_p;
         //Atributo que 'seta' a cor com o parametro recebido $cor_p
         $this->_cor=$cor_p;
     }
@@ -33,7 +35,7 @@ class Carro{
         return $this->_modelo;
     }
     public function setModelo($modelo_p){
-        $this->_modeloa=$modelo_p;
+        $this->_modelo=$modelo_p;
     }
     public function getCor(){
         return $this->_cor;

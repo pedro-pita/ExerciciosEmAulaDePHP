@@ -40,4 +40,18 @@ echo '<b>Modelo: </b>'.$tres_carro->getModelo().'<br />';
 echo '<b>Cor: </b>'.$tres_carro->getCor().'<br />';
 echo '</p>';
 
+//Função de criação dinamica
+function criarCarro($marca_p, $modelo_p, $cor_p){
+    $carro = new Carro();
+    $carro->setAtributos($marca_p, $modelo_p, $cor_p);
+    return $carro;
+}
+
+$i = 0;
+$listaCarros = array();
+$listaCarros[$i++] = criarCarro("Mercedes", "Amg", "Azul");
+$listaCarros[$i++] = criarCarro("Audi", "A6", "vermelho");
+$listaCarros[$i++] = criarCarro("Peugeot", "308", "preto");
+$listaCarros[$i++] = criarCarro("Ford", "Fiesta", "Amarelo");
+
 ?>
